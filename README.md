@@ -1,4 +1,4 @@
-# 💼 BizAssist AI
+# 💼 BizSabi AI
 
 > **Your AI-powered partner for smarter business communication.**  
 > *Developed as a Capstone Project for the 3MTT Meta Generative AI Programme.*
@@ -7,11 +7,11 @@
 
 ## 📌 1. Project Overview
 
-**BizAssist AI** is an AI-powered business communication and marketing assistant built specifically for Nigerian micro, small, and medium-sized enterprises (MSMEs) and online vendors.
+**BizSabi AI** is an AI-powered business communication and marketing assistant built specifically for Nigerian micro, small, and medium-sized enterprises (MSMEs) and online vendors.
 
 Many small business owners—fashion designers, bakers, caterers, hairdressers, food vendors, tech retailers, and freelancers—juggle daily operations alone. Writing persuasive WhatsApp sales pitches, creating engaging Instagram captions, writing clear product descriptions, and replying to customer inquiries professionally takes valuable hours away from serving clients.
 
-**BizAssist AI** solves this problem by using **Meta Llama 3.3 (70B)** to generate tailored, brand-consistent, culturally authentic, and truthful business communications in seconds.
+**BizSabi AI** solves this problem by using **Meta Llama 3.3 (70B)** to generate tailored, brand-consistent, culturally authentic, and truthful business communications in seconds.
 
 ---
 
@@ -71,7 +71,7 @@ capstone_meta/
 
 ## ⚡ 5. Quick Setup & Installation Guide
 
-Follow these simple steps in your terminal to set up and run BizAssist AI:
+Follow these simple steps in your terminal to set up and run BizSabi AI:
 
 ### Step 1: Clone or Open the Repository
 ```bash
@@ -105,7 +105,7 @@ pip install -r requirements.txt
    ```env
    GROQ_API_KEY=gsk_your_actual_key_here
    ```
-> *Note: If you don't enter an API key, BizAssist AI will automatically run in **Demonstration Mode**, providing realistic previews without crashing!*
+> *Note: If you don't enter an API key, BizSabi AI will automatically run in **Demonstration Mode**, providing realistic previews without crashing!*
 
 ### Step 5: Launch the Streamlit Web Application
 ```bash
@@ -149,3 +149,4 @@ For your capstone evaluation, the prompt engineering framework in `core/prompts.
 
 * **Developer:** 3MTT Fellow (Generative AI Track)
 * **Sponsor:** Federal Ministry of Communications, Innovation and Digital Economy (3MTT Nigeria) & Meta
+

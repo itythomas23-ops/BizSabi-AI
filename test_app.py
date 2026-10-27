@@ -1,6 +1,6 @@
 """
 test_app.py
-Automated Verification and Capstone Test Runner for BizAssist AI.
+Automated Verification and Capstone Test Runner for BizSabi AI.
 Tests all 10 realistic Nigerian business scenarios and verifies prompt grounding.
 """
 
@@ -18,7 +18,7 @@ from data.samples import SAMPLE_BUSINESSES, TEST_SCENARIOS
 
 def test_10_scenarios():
     print("=" * 60)
-    print("🚀 Running BizAssist AI 10 Capstone Test Scenarios Verification")
+    print("🚀 Running BizSabi AI 10 Capstone Test Scenarios Verification")
     print("=" * 60)
 
     client = AIClient()
@@ -79,3 +79,4 @@ def test_10_scenarios():
 
 if __name__ == "__main__":
     test_10_scenarios()
+

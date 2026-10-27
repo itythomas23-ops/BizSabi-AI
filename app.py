@@ -1,6 +1,6 @@
 """
 app.py
-BizAssist AI - Web Application
+BizSabi AI  - Web Application
 Streamlit user interface for the 3MTT Meta Generative AI Capstone Project.
 """
 
@@ -17,7 +17,7 @@ from data.samples import SAMPLE_BUSINESSES, TEST_SCENARIOS
 
 # Page configuration
 st.set_page_config(
-    page_title="BizAssist AI - Small Business Assistant",
+    page_title="BizSabi AI - Small Business Assistant",
     page_icon="💼",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -135,19 +135,20 @@ with st.sidebar:
         biz_products = st.text_area(
             "Products / Services Offered:",
             value=st.session_state.business_profile.get("products_services", ""),
-            rows=2,
-        )
+            height=70,
+)
         biz_target = st.text_area(
             "Target Customers:",
             value=st.session_state.business_profile.get("target_customers", ""),
-            rows=2,
-        )
+            height=70,
+)
+
         biz_usp = st.text_area(
             "Unique Selling Proposition (USP):",
             value=st.session_state.business_profile.get("usp", ""),
-            rows=2,
+            height=70,
             help="What makes your business special? (e.g. fresh daily, free delivery, neat stitching)",
-        )
+    )
         biz_tone = st.selectbox(
             "Preferred Brand Tone:",
             options=[
@@ -177,7 +178,7 @@ with st.sidebar:
 # ==========================================
 # MAIN INTERFACE
 # ==========================================
-st.markdown('<div class="main-title">💼 BizAssist AI</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title">💼 BizSabi AI</div>', unsafe_allow_html=True)
 st.markdown(
     '<div class="sub-title">Your AI-powered partner for smarter business communication. '
     'Tailored for Nigerian MSMEs, online vendors, and entrepreneurs.</div>',
@@ -228,7 +229,7 @@ with tab1:
             price_offer = st.text_input(
                 "Price or Special Offer (Optional):",
                 placeholder="e.g. Starts at ₦25,000 / Buy 2 get free delivery",
-                help="Only enter a price if you want it included. BizAssist will never invent prices.",
+                help="Only enter a price if you want it included. BizSabi AI will never invent prices.",
             )
         with col_w2:
             custom_cta = st.text_input(
@@ -238,7 +239,7 @@ with tab1:
             msg_focus = st.text_area(
                 "What are you promoting? (Required):",
                 placeholder="e.g. Promoting our fresh 2-tier celebration birthday cakes for weekend orders...",
-                rows=2,
+               height=70,
             )
 
         generate_wa_btn = st.form_submit_button("🚀 Generate WhatsApp Message", use_container_width=True)
@@ -253,7 +254,7 @@ with tab1:
                 "custom_cta": custom_cta,
                 "focus": msg_focus,
             }
-            with st.spinner("BizAssist AI is crafting your WhatsApp sales message..."):
+            with st.spinner("BizSabi AI is crafting your WhatsApp sales message..."):
                 prompt = build_whatsapp_prompt(st.session_state.business_profile, task_input)
                 result, is_live = ai_client.generate(SYSTEM_PROMPT, prompt)
                 st.session_state.generated_result = result
@@ -287,7 +288,7 @@ with tab2:
             product_details = st.text_area(
                 "Features & Raw Details (Required):",
                 placeholder="e.g. 22.5W two-way fast charging, LED percentage display, charges 3 devices simultaneously, type-C port...",
-                rows=2,
+                height=70,
             )
 
         generate_prod_btn = st.form_submit_button("🚀 Generate Product Description", use_container_width=True)
@@ -302,7 +303,7 @@ with tab2:
                 "target_buyer": target_buyer,
                 "product_details": product_details,
             }
-            with st.spinner("BizAssist AI is creating your product description..."):
+            with st.spinner("BizSabi AI is creating your product description..."):
                 prompt = build_product_description_prompt(st.session_state.business_profile, task_input)
                 result, is_live = ai_client.generate(SYSTEM_PROMPT, prompt)
                 st.session_state.generated_result = result
@@ -346,7 +347,7 @@ with tab3:
             caption_focus = st.text_area(
                 "Visual Content / Topic of the Post (Required):",
                 placeholder="e.g. Showcasing painless knotless bohemian braids on 4C hair with free scalp treatment...",
-                rows=2,
+                height=70,
             )
 
         generate_soc_btn = st.form_submit_button("🚀 Generate Social Media Caption", use_container_width=True)
@@ -361,7 +362,7 @@ with tab3:
                 "tone_override": tone_override,
                 "caption_focus": caption_focus,
             }
-            with st.spinner(f"BizAssist AI is generating your {platform} caption..."):
+            with st.spinner(f"BizSabi AI is generating your {platform} caption..."):
                 prompt = build_social_media_prompt(st.session_state.business_profile, task_input)
                 result, is_live = ai_client.generate(SYSTEM_PROMPT, prompt)
                 st.session_state.generated_result = result
@@ -404,14 +405,14 @@ with tab4:
             known_facts = st.text_area(
                 "Known Facts / Actual Details (Crucial to prevent guesswork):",
                 placeholder="e.g. Price is ₦18,000. Interstate delivery takes 2-3 days via GIG Logistics (₦3,500 fee)...",
-                rows=2,
+                height=70,
                 help="Supply true prices, delivery dates, or policies so the AI never has to invent them.",
             )
 
         customer_message = st.text_area(
             "Customer's Message or Question (Required):",
             placeholder="e.g. Hi, how much is your 8-inch chocolate cake? Can I get it today in Maitama?",
-            rows=3,
+           height=100,
         )
 
         generate_reply_btn = st.form_submit_button("🚀 Generate Customer Reply", use_container_width=True)
@@ -426,7 +427,7 @@ with tab4:
                 "response_style": response_style,
                 "known_facts": known_facts,
             }
-            with st.spinner("BizAssist AI is drafting your professional customer reply..."):
+            with st.spinner("BizSabi AI is drafting your professional customer reply..."):
                 prompt = build_customer_reply_prompt(st.session_state.business_profile, task_input)
                 result, is_live = ai_client.generate(SYSTEM_PROMPT, prompt)
                 st.session_state.generated_result = result
@@ -439,7 +440,7 @@ with tab4:
 # ------------------------------------------
 with tab5:
     st.subheader("🧪 10 Realistic Capstone Test Scenarios")
-    st.caption("Demonstrate the complete versatility of BizAssist AI across 10 distinct Nigerian business situations.")
+    st.caption("Demonstrate the complete versatility of BizSabi AI across 10 distinct Nigerian business situations.")
 
     selected_test_id = st.selectbox(
         "Choose a Test Scenario to inspect or run:",
@@ -512,3 +513,4 @@ if st.session_state.generated_result:
             st.rerun()
     with action_col2:
         st.caption("💡 *Tip: You can edit or tweak any details before posting to WhatsApp or Social Media.*")
+

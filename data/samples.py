@@ -1,6 +1,6 @@
 """
 data/samples.py
-Sample Nigerian business profiles and test scenarios for BizAssist AI.
+Sample Nigerian business profiles and test scenarios for BizSabi AI.
 These fictional profiles help non-technical users quickly test all features
 without typing everything from scratch.
 """
@@ -176,3 +176,4 @@ TEST_SCENARIOS = [
         "description": "A business owner following up with an interested customer."
     },
 ]
+

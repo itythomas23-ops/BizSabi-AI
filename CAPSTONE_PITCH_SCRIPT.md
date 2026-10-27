@@ -1,4 +1,4 @@
-# 🎤 BizAssist AI — Capstone Presentation & Pitch Script
+# 🎤 BizSabi AI — Capstone Presentation & Pitch Script
 
 Use this pitch script during your **3MTT Meta Generative AI Capstone Presentation**. It is structured to take **3 to 5 minutes**, covering the problem, solution, architecture, prompt engineering, live demo, and impact.
 
@@ -7,7 +7,7 @@ Use this pitch script during your **3MTT Meta Generative AI Capstone Presentatio
 ## ⏱️ Slide 1: Introduction (30 seconds)
 > *"Good day, respected evaluators, mentors, and fellow 3MTT fellows.*  
 > *My name is [Your Name], and I am proud to present my 3MTT Meta Generative AI Capstone Project:*  
-> ***BizAssist AI: Your AI-Powered Partner for Smarter Business Communication.***  
+> ***BizSabi AI: Your AI-Powered Partner for Smarter Business Communication.***  
 > *In Nigeria today, micro and small businesses—from bakers and fashion designers to caterers and online retailers—are the heartbeat of our economy. Yet, many struggle with one critical challenge: communication and digital marketing."*
 
 ---
@@ -21,8 +21,8 @@ Use this pitch script during your **3MTT Meta Generative AI Capstone Presentatio
 
 ---
 
-## ⏱️ Slide 3: The Solution — BizAssist AI (45 seconds)
-> *"BizAssist AI solves this directly. It is not just an advert generator. It is a full-cycle business communication assistant.*  
+## ⏱️ Slide 3: The Solution — BizSabi AI (45 seconds)
+> *"BizSabi AI solves this directly. It is not just an advert generator. It is a full-cycle business communication assistant.*  
 > *It provides four core capabilities:*  
 > 1. *WhatsApp Sales Message Generator (Status and Broadcast formats).*  
 > 2. *Product & Service Description Generator.*  
@@ -33,7 +33,7 @@ Use this pitch script during your **3MTT Meta Generative AI Capstone Presentatio
 ---
 
 ## ⏱️ Slide 4: Technology & Prompt Engineering (1 minute)
-> *"Behind BizAssist AI is a clean, modern technology stack:*  
+> *"Behind BizSabi AI is a clean, modern technology stack:*  
 > - *Frontend & Interface: Streamlit in Python.*  
 > - *Foundation Model: Meta Llama 3.3 (70B) hosted via Groq Cloud for near-instant inference.*  
 > - *Modular Architecture: The AI client is completely separated from the UI, so models can be swapped effortlessly.*  
@@ -51,12 +51,13 @@ Use this pitch script during your **3MTT Meta Generative AI Capstone Presentatio
 > 1. *Notice our Business Profile sidebar. We have preloaded realistic Nigerian profiles. Let's select 'Baker (Sweet Crumbs, Abuja)'.*  
 > 2. *Let's go to Tab 1: WhatsApp Sales Message. We enter 'Promoting 2-tier whipped cream birthday cakes for weekend parties with free cupcakes'. Click Generate!*  
 > 3. *In under 2 seconds, we get both a Short Status Version with emojis and a Detailed Broadcast Version with clear calls to action.*  
-> 4. *Now let's test Tab 4: Customer Reply. Suppose an unhappy customer says: 'The food arrived cold and a drink is missing!' BizAssist AI drafts a calm, apologetic reply that offers an immediate resolution without escalating the conflict.*  
+> 4. *Now let's test Tab 4: Customer Reply. Suppose an unhappy customer says: 'The food arrived cold and a drink is missing!' BizSabi AI drafts a calm, apologetic reply that offers an immediate resolution without escalating the conflict.*  
 > 5. *We have also automated testing for 10 distinct Nigerian business scenarios to guarantee reliability."*
 
 ---
 
 ## ⏱️ Slide 6: Expected Impact & Conclusion (30 seconds)
-> *"With BizAssist AI, a solo entrepreneur saves 5 to 10 hours every week on communication, avoids costly misunderstandings, and converts more prospects into paying customers.*  
+> *"With BizSabi AI, a solo entrepreneur saves 5 to 10 hours every week on communication, avoids costly misunderstandings, and converts more prospects into paying customers.*  
 > *This empowers Nigerian MSMEs to look professional, scale faster, and compete effectively in the digital economy.*  
 > *Thank you to 3MTT, the Federal Ministry, and Meta for this opportunity. I am ready for your questions!"*
+

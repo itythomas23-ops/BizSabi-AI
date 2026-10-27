@@ -1,6 +1,6 @@
 """
 core/prompts.py
-Prompt Engineering Module for BizAssist AI.
+Prompt Engineering Module for BizSabi AI.
 
 Defines carefully engineered system prompts and task-specific prompt templates.
 Ensures zero-hallucination of prices, stock, delivery dates, or policies,
@@ -10,7 +10,7 @@ and maintains authentic Nigerian business communication standards.
 from typing import Dict, Any, Optional
 
 # System Persona shared across all tasks
-SYSTEM_PROMPT = """You are BizAssist AI, an expert digital marketing consultant and professional customer communication assistant built specifically for Nigerian small business owners and micro-enterprises.
+SYSTEM_PROMPT = """You are BizSabi AI, an expert digital marketing consultant and professional customer communication assistant built specifically for Nigerian small business owners and micro-enterprises.
 
 YOUR CORE PRINCIPLES:
 1. CONTEXTUAL RELEVANCE: Communicate in clear, natural, engaging Nigerian English that resonates with local customers (warm, respectful, polite, and persuasive without unnecessary corporate jargon).
@@ -180,3 +180,4 @@ Known Facts / Instructions from Owner:
 1. 💬 Recommended Reply: (Ready to copy-paste directly into WhatsApp or Instagram DM).
 2. 💡 Note for Business Owner: (A quick tip on what details to confirm or customize before hitting send).
 """
+

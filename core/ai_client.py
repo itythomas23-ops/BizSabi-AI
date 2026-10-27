@@ -1,6 +1,6 @@
 """
 core/ai_client.py
-Modular AI Client connector for BizAssist AI.
+Modular AI Client connector for BizSabi AI.
 
 Supports:
 1. Groq Cloud (Meta Llama 3.3 70B / Llama 3.1 8B) - Primary free tier choice.
@@ -22,11 +22,11 @@ class AIClient:
     Allows easy switching of models or providers without touching application UI code.
     """
 
-    def __init__(self, api_key: Optional[str] = None, model: str = "llama-3.3-70b-versatile"):
+    def __init__(self, api_key: Optional[str] = None, model: str = "openai/gpt-oss-20b"):
         self.api_key = api_key or os.getenv("GROQ_API_KEY", "").strip()
         self.model = model
-        self.provider = "Groq (Meta Llama 3.3)"
-
+        self.provider = "Groq (GPT OSS 20B)"
+        
     def is_configured(self) -> bool:
         """Returns True if a non-placeholder API key is available."""
         return bool(self.api_key and not self.api_key.startswith("your_"))
@@ -133,3 +133,4 @@ class AIClient:
                 "Looking forward to hearing from you!\n\n"
                 "💡 *Note for Business Owner:* Confirm the rider's availability before finalizing the order with the customer."
             )
+
